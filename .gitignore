@@ -1,0 +1,59 @@
+# dependencies
+appProjFinal/node_modules
+appProjFinal/.yarn/*
+appProjFinal/!.yarn/patches
+appProjFinal/!.yarn/plugins
+appProjFinal/!.yarn/releases
+appProjFinal/!.yarn/sdks
+appProjFinal/!.yarn/versions
+appProjFinal/.pnp.*
+appProjFinal/.npm
+appProjFinal/web_modules/
+
+# blitz
+appProjFinal/.blitz/
+appProjFinal/.next/
+appProjFinal/*.sqlite
+appProjFinal/*.sqlite-journal
+appProjFinal/.now
+appProjFinal/.blitz**
+appProjFinal/blitz-log.log
+
+# misc
+appProjFinal/.DS_Store
+
+# local env files
+appProjFinal/.env
+appProjFinal/.env.local
+appProjFinal/.env.*.local
+appProjFinal/.envrc
+
+# Logs
+appProjFinal/logs
+appProjFinal/*.log
+
+# Runtime data
+appProjFinal/pids
+appProjFinal/*.pid
+appProjFinal/*.seed
+appProjFinal/*.pid.lock
+
+# Testing
+appProjFinal/.coverage
+appProjFinal/*.lcov
+appProjFinal/.nyc_output
+appProjFinal/lib-cov
+
+# Caches
+appProjFinal/*.tsbuildinfo
+appProjFinal/.eslintcache
+appProjFinal/.node_repl_history
+appProjFinal/.yarn-integrity
+
+# Serverless directories
+appProjFinal/.serverless/
+
+# Stores VSCode versions used for testing VSCode extensions
+appProjFinal/.vscode-test
+.DS_Store
+
