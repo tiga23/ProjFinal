@@ -7,14 +7,12 @@ ENV DATABASE_URL ${DATABASE_URL}
 WORKDIR /usr/src/app
 
 COPY package.json yarn.lock ./
-COPY db/ ./db/
+COPY data/ ./data/
 RUN yarn install --frozen-lockfile
-RUN yarn prisma introspect
-RUN yarn blitz prisma migrate deploy
 
 COPY . .
-RUN yarn build
+#RUN yarn build
 
 EXPOSE ${PORT}
-CMD ["yarn", "dev"]
+CMD ["yarn", "develop"]
 

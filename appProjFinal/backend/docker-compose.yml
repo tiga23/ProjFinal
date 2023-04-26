@@ -13,7 +13,7 @@ services:
       - ./data/db:/var/lib/postgresql/data
       - ./scripts/init-backend-postgres.sh:/docker-entrypoint-initdb.d/init-backend-postgres.sh
 
-  backendapp:
+  strapi:
     build: .
     volumes:
       - .:/home/node/app
