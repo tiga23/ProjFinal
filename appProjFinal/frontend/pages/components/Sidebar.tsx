@@ -1,4 +1,5 @@
-import { Flex, Box, Text, Image } from "@chakra-ui/react";
+import { Flex, Box, Text, Image, Button } from "@chakra-ui/react";
+import Sidebar_Products from "./Sidebar_Products";
 
 const Sidebar = () => {
   return (
@@ -9,16 +10,47 @@ const Sidebar = () => {
       bottom={0}
       w="300px"
       bg="gray.100"
-      flexDirection="row-reverse"
-      justifyContent="center"
+      flexDirection="column"
+      justifyContent="space-between"
       alignItems="center"
+      p={4}
     >
-        <Image src="/images/logo.gif" alt="Photo" boxSize="100px" position="absolute" top={0} mt={12}  />
-        <Box p="4" textAlign="left" position="absolute" top={180} >
-            <Text>ReservarReservarReservar</Text>
-            <Text>Menu Item 2</Text>
-            <Text>Reservar</Text>
+      <Box
+        textAlign="center"
+        justifyContent="center"
+        alignItems="center"
+        mt={12}
+      >
+        <Image
+          src="/images/logo.gif"
+          alt="Photo"
+          boxSize="100px"
+          display={"inline-block"}
+        />
+        <Button
+          w="230px"
+          variant="solid"
+          borderRadius={"20px"}
+          backgroundColor="#043E70"
+          color={"white"}
+          fontSize={20}
+          fontFamily={"Stem-Regular"}
+          mt={4}
+        >
+          Sair
+        </Button>
+
+        <Box textAlign="left" fontSize={33} fontFamily="Stem-Bold" mt={12}>
+          <Text>
+            Reservar <br />
+            Novamente
+          </Text>
         </Box>
+        <Sidebar_Products/>
+        <Sidebar_Products/>
+        <Sidebar_Products/>
+        <Sidebar_Products/>
+      </Box>
     </Flex>
   );
 };
