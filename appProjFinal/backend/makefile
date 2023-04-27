@@ -6,3 +6,6 @@ logs:
 
 down:
 	docker compose down
+
+migrate:
+	docker compose exec yarn strapi import -f ./database/migrations/inital-db.tag.gz
