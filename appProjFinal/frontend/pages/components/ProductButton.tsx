@@ -1,22 +1,28 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
-import { AddIcon } from "@chakra-ui/icons";
+import { Button, Image, Text } from "@chakra-ui/react";
 
 const ProductButton = () => {
   return (
     <Button
       w="200px"
       h="200px"
-      borderRadius="10px"
-      backgroundColor="#F5C700"
+      borderRadius="30px"
+      backgroundColor="#EFEFEF"
       color="white"
       display="flex"
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
       boxShadow="lg"
+      _hover={{ backgroundColor: "#F5C700" }}
     >
       <Image src={"/images/mesa.png"} alt="Product Image" mb={2} />
-      <Text fontSize={24} fontWeight="bold" textAlign="center" color={"black"} fontFamily={"Stem-Bold"}>
+      <Text
+        fontSize={24}
+        fontWeight="bold"
+        textAlign="center"
+        color={"black"}
+        fontFamily={"Stem-Bold"}
+      >
         Jogos
       </Text>
     </Button>
