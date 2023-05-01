@@ -31,7 +31,7 @@ const RoundedModal = () => {
   return (
     <>
 
-      <Button onClick={onOpen}      
+      <Button      
         backgroundColor="#F5C700"
         color="white"
         position="fixed"
@@ -43,7 +43,7 @@ const RoundedModal = () => {
         <ModalContent
           borderRadius="100%"
           padding={10}
-          h={"700"}
+          h={"600"}
           
           backgroundColor="white"
           boxShadow="0px 4px 10px rgba(0, 0, 0, 0.25)"
@@ -52,10 +52,10 @@ const RoundedModal = () => {
           <ModalBody>
             <Flex direction="column" alignItems="center" justifyContent="center">
               <Text fontSize={20} fontWeight="bold" textAlign="center" marginBottom={4}>
-                Modal Title
+                Sucesso!
               </Text>
               <Text fontSize={16} textAlign="center" marginBottom={6}>
-                Modal Text
+              Informamos que a reserva do produto foi completada, pode dirigir-se a 
               </Text>
               <Button
                 isLoading={isLoading}
@@ -69,7 +69,7 @@ const RoundedModal = () => {
                 _active={{ backgroundColor: "#F5C700" }}
                 onClick={handleButtonClick}
               >
-                Modal Button
+                Sair
               </Button>
             </Flex>
           </ModalBody>

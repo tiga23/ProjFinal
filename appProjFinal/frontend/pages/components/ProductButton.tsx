@@ -1,10 +1,11 @@
 import { Button, Image, Text } from "@chakra-ui/react";
 
-const ProductButton = () => {
+const ProductButton = (props) => {
   return (
     <Button
-      w="200px"
-      h="200px"
+     m={3}
+      w={props.w}
+      h={props.h}
       borderRadius="30px"
       backgroundColor="#EFEFEF"
       color="white"

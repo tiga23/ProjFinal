@@ -7,7 +7,7 @@ const Banner = () => {
       w="100%"
       px={4}
       py={2}
-      position="fixed"
+      position="relative"
       top={0}
       zIndex={10}
       display="flex"

@@ -8,7 +8,7 @@ const Sidebar = () => {
       top={0}
       right={0}
       bottom={0}
-      w="300px"
+      w="30%"
       bg="gray.100"
       flexDirection="column"
       justifyContent="space-between"
@@ -20,6 +20,9 @@ const Sidebar = () => {
         justifyContent="center"
         alignItems="center"
         mt={12}
+        display="flex"
+        flexDirection="column"
+        flexWrap="wrap" 
       >
         <Image
           src="/images/logo.gif"
