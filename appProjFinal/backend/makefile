@@ -8,4 +8,4 @@ down:
 	docker compose down
 
 migrate:
-	yarn strapi import -f ./database/migrations/inital-db.tar.gz
+	sudo yarn strapi import -f ./database/migrations/inital-seed.tar.gz
