@@ -24,7 +24,8 @@
     "category": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::category.category"
+      "target": "api::category.category",
+      "inversedBy": "item"
     }
   }
 }

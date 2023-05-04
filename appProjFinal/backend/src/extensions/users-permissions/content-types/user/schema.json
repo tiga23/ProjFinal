@@ -68,11 +68,6 @@
     },
     "photo": {
       "type": "string"
-    },
-    "reservations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::reservation.reservation"
     }
   }
 }
