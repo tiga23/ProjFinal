@@ -8,6 +8,8 @@ import ProductButton from './components/ProductButton';
 import Banner from './components/Banner';
 import BotaoLargo from './components/BotaoLargo';
 import RoundedModal from './components/RoundedModal';
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
+import { GET_ALL_CATEGORIES } from "@/graphql/queries";
 
 export default function Home() {
   return (
@@ -17,5 +19,22 @@ export default function Home() {
       <BottomButton />
     </Link>
     </>
-  )
+  );
+}
+
+export async function getServerSideProps() {
+  const client = new ApolloClient({
+    uri: process.env.STRAPI_GRAPHQL_API,
+    cache: new InMemoryCache(),
+  });
+
+  const { data } = await client.query({
+    query: GET_ALL_CATEGORIES,
+  });
+
+  return {
+    props: {
+      categories: data.categories.data,
+    },
+  };
 }
