@@ -14,12 +14,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "item": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::item.item",
-      "inversedBy": "category"
     }
   }
 }
